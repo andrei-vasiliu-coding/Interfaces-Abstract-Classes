@@ -1,4 +1,4 @@
 package org.example;
 
-public class Fish {
+public class Fish implements Swimmable {
 }
