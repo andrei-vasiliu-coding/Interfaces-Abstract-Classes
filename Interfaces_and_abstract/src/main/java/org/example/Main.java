@@ -22,10 +22,9 @@ public class Main {
         List<Environment<?>> environments = List.of(sky, water, road);
 
         for (Environment<?> environment: environments) {
-            //environment.checkTraffic();
+            environment.checkTraffic();
             environment.checkVehicles();
         }
-        Car car = new Car();
     }
 
 }

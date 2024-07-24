@@ -20,4 +20,6 @@ public abstract class Environment<T> {
             }
         }
     }
+
+    int maxSpeed;
 }

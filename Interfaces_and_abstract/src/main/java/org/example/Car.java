@@ -6,4 +6,9 @@ public class Car extends Vehicle implements Driveable {
     void move() {
         this.drive();
     }
+
+    @Override
+    public void getSpeed() {
+
+    }
 }

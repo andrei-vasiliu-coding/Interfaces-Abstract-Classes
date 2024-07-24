@@ -9,4 +9,8 @@ public class Sky extends Environment<Flyable>{
             flyable.fly();
         }
     }
+
+    public Sky() {
+        this.maxSpeed = 300;
+    }
 }

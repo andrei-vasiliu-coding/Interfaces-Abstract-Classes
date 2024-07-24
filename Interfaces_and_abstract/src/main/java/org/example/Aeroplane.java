@@ -12,4 +12,8 @@ public class Aeroplane extends Vehicle implements Flyable {
         this.fly();
     }
 
+    @Override
+    public void getSpeed() {
+
+    }
 }

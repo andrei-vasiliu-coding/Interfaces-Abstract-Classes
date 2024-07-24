@@ -7,4 +7,8 @@ public class Water extends Environment<Swimmable>{
             swimmable.swim();
         }
     }
+
+    public Water() {
+        this.maxSpeed = 10;
+    }
 }

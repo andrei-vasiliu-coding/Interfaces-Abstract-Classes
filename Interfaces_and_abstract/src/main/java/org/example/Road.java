@@ -7,4 +7,8 @@ public class Road extends Environment<Driveable>{
             driveable.drive();
         }
     }
+
+    public Road() {
+        this.maxSpeed = 70;
+    }
 }
