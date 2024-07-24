@@ -12,7 +12,4 @@ public class Aeroplane extends Vehicle implements Flyable {
         this.fly();
     }
 
-    public String toString() {
-        return "Aeroplane";
-    }
 }

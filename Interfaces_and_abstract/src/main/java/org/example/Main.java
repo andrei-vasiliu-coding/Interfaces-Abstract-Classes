@@ -1,39 +1,32 @@
 package org.example;
 import java.util.List;
 
-    public class Main {
+public class Main {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            List<Object> objects = List.of(
-                    new Aeroplane(),
-                    new Car(),
-                    new Pigeon(),
-                    new Duck(),
-                    new Fish()
-            );
+        Sky sky = new Sky();
+        sky.addTraffic(new Duck());
+        sky.addTraffic(new Pigeon());
+        sky.addTraffic(new Aeroplane());
 
-            for (Object object : objects) {
+        Water water = new Water();
+        water.addTraffic(new Duck());
+        water.addTraffic(new Fish());
 
-                if (object instanceof Swimmable swimmable) {
-                    swimmable.swim();
-                }
+        Road road = new Road();
+        road.addTraffic(new Car());
+        road.addTraffic(new Van());
+        road.addTraffic(new Lorry());
 
-                if (object instanceof Flyable flyable) {
-                    flyable.fly();
-                }
+        List<Environment<?>> environments = List.of(sky, water, road);
 
-                if (object instanceof Vehicle vehicle) {
-                    vehicle.move();
-                }
-
-            }
-
-            Sky sky = new Sky();
-            sky.addTraffic(new Duck());
-            sky.addTraffic(new Pigeon());
-            sky.addTraffic(new Aeroplane());
-
-            sky.checkTraffic();
+        for (Environment<?> environment: environments) {
+            //environment.checkTraffic();
+            environment.checkVehicles();
         }
+        Car car = new Car();
     }
+
+}
+
