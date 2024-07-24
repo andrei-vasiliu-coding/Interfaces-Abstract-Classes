@@ -11,4 +11,8 @@ public class Aeroplane extends Vehicle implements Flyable {
     void move() {
         this.fly();
     }
+
+    public String toString() {
+        return "Aeroplane";
+    }
 }
